@@ -2,11 +2,9 @@ name: Build and Push Docker image to Docker Hub
 
 # on: push
 on:
-  # push:
-  #   branches:
-  #     - 'main'
+  push:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '0 0 * * *'
 jobs:
   push_to_registry:
     name: Push Docker image to Docker Hub
